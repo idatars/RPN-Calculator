@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>RPN Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/design.css">
+        <link rel="shortcut icon" href="#">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header><h1 id="desktoptitle">Reverse Polish Notation Calculator</h1></header>
+
+        <div id="calculator">
+            <div id="display">
+                <h1 id="mobiletitle">Reverse Polish Notation Calculator</h1>
+                <div id="screenwrap">
+                    <p id="screen"></p>
+                </div>
+                <button id="up" class="navigation">&and;</button>
+                <button id="down" class="navigation">&or;</button>
+            </div>
+
+            <div id='buttongrid'>
+                <button id="clear">C</button>
+                <button id="pi">&pi;</button>
+                <button id="exp">^</button>
+                <button id="divide">&#247;</button>
+
+                <button id="seven">7</button>
+                <button id="eight">8</button>
+                <button id="nine">9</button>
+                <button id="multiply">x</button>
+
+                <button id="four">4</button>
+                <button id="five">5</button>
+                <button id="six">6</button>
+                <button id="subtract">-</button>
+
+                <button id="one">1</button>
+                <button id="two">2</button>
+                <button id="three">3</button>
+                <button id="add">+</button>
+
+                <button id="zero">0</button>
+                <button id="decimal">.</button>
+                <button id="enter">Enter</button>
+                <!--<button id="equals">=</button> !-->
+            </div>
+            <div id=infixdiv>
+                <label for="infixcheckbox">Show infix conversion</label>
+                <input type="checkbox" id="infixcheckbox">
+                <p id="infixdisplay">temp2</p>
+            </div>
+        </div>
+
+        <div id="info">
+            <div class="section">
+            <h2>What is Reverse Polish Notation?</h2>
+                <p>Reverse Polish Notation, also known as postfix or RPN notation, in a mathematical notation in which operators follow their operands.
+        
+                </p>
+            </div>
+            <div class="section">
+                <h2>How does RPN work?</h2>
+                <p>Converting infix notation to RPN is as simple as moving the operator to the right of the two operands!</p>
+                <table>
+                    <tr>
+                        <th>Infix</th>
+                        <th>RPN</th>
+                        <th>Result</th>
+                    </tr>
+                    <tr>
+                        <td>4 + 3</td>
+                        <td>4 3 +</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>3 2 ^ &pi; x</td>
+                        <td>(3^2)x&pi;</td>
+                        <td>28.27</td>
+                    </tr>
+                    <tr>
+                        <td>1 3 + 12 4 + &#247;</td>
+                        <td>(1+3)/(12+4)</td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td>4 2 5 3 - + &#247;</td>
+                        <td>4/(2+(5-3))</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>How to use this calculator</h2>
+                <p>To use this calculator, press the digit buttons, followed by 'Enter' to input a number. After inputing your operators, press 'Enter'
+                    to submit the expression. You can use the &and; and &or; buttons to view input history, and C to reset the current display.
+                </p>
+            </div>
+        </div>
+
+        
+
+        
+
+        <!-- Javascript goes after the page-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
