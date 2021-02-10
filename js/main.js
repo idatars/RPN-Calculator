@@ -61,6 +61,9 @@ function dontfork() {
         screen.innerHTML = "";
     }
     if (history.index != history.data.length - 1) {
+        if (history.data[history.data.length - 1].display == "") {
+            history.data.pop();
+        }
         let stackcopy = [];
         for (let i = 0; i < history.data[history.index].stack.length; i++) {
             stackcopy[i] = history.data[history.index].stack[i].copy();
