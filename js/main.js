@@ -155,8 +155,12 @@ function infixConversion(tree) {
 
 function pi() {
     dontfork();
-    addNum();
     if (currnum == null) {
+        screen.innerHTML += 'pi';
+        currnum = Math.PI;
+        addNum();
+    } else {
+        addNum();
         screen.innerHTML += 'pi';
         currnum = Math.PI;
         addNum();
