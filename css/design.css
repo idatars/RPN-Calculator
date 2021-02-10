@@ -38,7 +38,7 @@ tr:nth-child(even) {
 }
 
 th {
-    background-color: #72BCE3;
+    background-color: #8fd8ff;
     color: #000;
     padding: 5px;
     font: 13pt Inconsolata, sans-serif;
@@ -103,17 +103,13 @@ button:active {
 }
 
 #screenwrap {
-    grid-row: 2/4;
+    grid-row: 1/4;
     border: 1px solid #000000;
     text-align: right;
     background-color: #ffffff;
     border: none;
     word-break:break-all;
     display: inline-block;
-}
-
-#screen {
-    
 }
 
 #mobiletitle {
@@ -190,5 +186,9 @@ input[type=checkbox] {
 
     #calculator {
         border-radius: 0 0 18px 18px;
+    }
+
+    #screenwrap {
+        grid-row: 2/4;
     }
 }
